@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+	
+		<script>
+			function lightdark(){
+				console.log('function lightdark()');
+				
+				if(document.getElementById('homedark')){
+					document.getElementById('linkcss').innerHTML="<link id = 'homelight' rel = 'stylesheet' href = 'homelight.css' />";
+				}
+				if(document.getElementById('homelight')){
+					document.getElementById('linkcss').innerHTML="<link id = 'homedark' rel = 'stylesheet' href = 'homedark.css' />";
+				}
+			}
+		</script>
+		
+		<section id = 'linkcss'>
+			<link id = 'homedark' rel = 'stylesheet' href = 'homedark.css' />
+		</section>
+		
+		<title>Comic Website</title>
+	</head>
+	
+	<body>
+	
+		<header>
+			<img src = '' id = 'logo' />
+			<button id = 'lightdark' onClick = 'lightdark()'>
+				<img src = '' />
+			</button>
+		</header>
+		
+		<section id = 'navigation'>
+			<table>
+				<tr>
+					<td><a href = 'home.html'>HOME</a></td>
+					<td><a href = 'bookmarks.html'>BOOKMARKS</a></td>
+					<td><a href = 'comics.html'>COMICS</a></td>
+					<td><a href = 'recruitment.html'>RECRUITMENT</a></td>
+					<td><a href = 'language.html'>LANGUAGE</a></td>
+				</tr>
+			</table>
+		</section>
+	</body>
+	
+</html>
