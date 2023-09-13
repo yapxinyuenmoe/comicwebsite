@@ -1,48 +1,141 @@
-<!DOCTYPE html>
 <html>
 
 	<head>
 	
 		<script>
-			function lightdark(){
-				console.log('function lightdark()');
-				
-				if(document.getElementById('homedark')){
-					document.getElementById('linkcss').innerHTML="<link id = 'homelight' rel = 'stylesheet' href = 'homelight.css' />";
+			onoff = 0;
+			function darklight(){
+				if (onoff == 0){
+					document.getElementById('darklightstyle').innerHTML=
+						"html{"
+							+ "background-color : white ;"
+						+ "}"
+						+ "header #logo{"
+							+ "width : 50px ;"
+							+ "height : 50px ;"
+							+ "background-color : violet ;"
+							+ "border-size : 1px ;"
+							+ "border-color : black ;"
+							+ "border-style : solid ;"
+						+ "}"
+						+ "header #darklighticon{"
+							+ "border-radius : 100px ;"
+						+ "}"
+						+ "header #lighticon{"
+							+ "border-radius : 100px ;"
+							+ "background-color : white ;"
+						+ "}"
+						+ "#navigation tr, td{"
+							+ "background-color : violet ;"
+						+ "}"
+						+ "#navigation a{"
+							+ "color : black ;"
+							+ "text-decoration : none ;"
+						+ "}";
+					onoff = 1;
+					document.getElementById('darklighticon').innerHTML=
+						"<img id = 'lighticon' src = '4514193-200.png' />";
 				}
-				if(document.getElementById('homelight')){
-					document.getElementById('linkcss').innerHTML="<link id = 'homedark' rel = 'stylesheet' href = 'homedark.css' />";
+				else{
+					document.getElementById('darklightstyle').innerHTML=
+						"html{"
+							+ "background-color : black ;"
+						+ "}"
+						+ "header #logo{"
+							+ "width : 50px ;"
+							+ "height : 50px ;"
+							+ "background-color : violet ;"
+							+ "border-size : 1px ;"
+							+ "border-color : white ;"
+							+ "border-style : solid ;"
+						+ "}"
+						+ "header #darklighticon{"
+							+ "border-radius : 100px ;"
+						+ "}"
+						+ "header #darkicon{"
+							+ "border-radius : 100px ;"
+							+ "background-color : white ;"
+							+ "filter : invert(1) ;"
+						+ "}"
+						+ "#navigation tr, td{"
+							+ "background-color : violet ;"
+						+ "}"
+						+ "#navigation a{"
+							+ "color : white ;"
+							+ "text-decoration : none ;"
+						+ "}";
+					onoff = 0;
+					document.getElementById('darklighticon').innerHTML=
+						"<img id = 'darkicon' src = '1664849-200.png' />";
 				}
 			}
 		</script>
 		
-		<section id = 'linkcss'>
-			<link id = 'homedark' rel = 'stylesheet' href = 'homedark.css' />
-		</section>
+		<style id = 'darklightstyle'>
+			html{
+				background-color : black ;
+				}
+			header #logo{
+				width : 50px ;
+				height : 50px ;
+				background-color : violet ;
+				border-size : 1px ;
+				border-color : white ;
+				border-style : solid ;
+			}
+			header #darklighticon{
+				border-radius : 100px ;
+			}
+			header #darkicon{
+				border-radius : 100px ;
+				background-color : white ;
+				filter : invert(1) ;
+			}
+			#navigation tr, td{
+				background-color : violet ;
+			}
+			#navigation a{
+				color : white ;
+				text-decoration : none ;
+			}
+		</style>
 		
 		<title>Comic Website</title>
+		
 	</head>
 	
 	<body>
 	
 		<header>
+		
 			<img src = '' id = 'logo' />
-			<button id = 'lightdark' onClick = 'lightdark()'>
-				<img src = '' />
+			
+			<button id = 'darklighticon' onClick = 'darklight()'>
+			
+				<img id = 'darkicon' src = '1664849-200.png' />
+				
 			</button>
+			
 		</header>
 		
 		<section id = 'navigation'>
+		
 			<table>
+			
 				<tr>
+				
 					<td><a href = 'home.html'>HOME</a></td>
 					<td><a href = 'bookmarks.html'>BOOKMARKS</a></td>
 					<td><a href = 'comics.html'>COMICS</a></td>
 					<td><a href = 'recruitment.html'>RECRUITMENT</a></td>
 					<td><a href = 'language.html'>LANGUAGE</a></td>
+					
 				</tr>
+				
 			</table>
+			
 		</section>
+		
 	</body>
 	
 </html>
