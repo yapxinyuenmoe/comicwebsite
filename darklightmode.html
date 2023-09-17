@@ -1,0 +1,56 @@
+		<script>
+			onoff = 0;
+			function darklight(){
+				if (onoff == 0){
+					/*
+					+ ""
+					*/
+					document.getElementById('darklightstyle').innerHTML=
+						"header #darklighticon{"
+							+ "border-style : none ;"
+							+ "width : 100px ;"
+							+ "height : 100px ;"
+							+ "background-image : url('4514193-200.png') ;"
+							+ "background-size : 100% 100% ;"
+							+ "background-color : white ;"
+							+ "border-radius : 100% ;"
+							+ "border-width : 10px ;"
+							+ "border-color : black ;"
+						+ "}";
+					onoff = 1;
+				}
+				else{
+					document.getElementById('darklightstyle').innerHTML=
+						"header #darklighticon{"
+							+ "border-style : none ;"
+							+ "width : 100px ;"
+							+ "height : 100px ;"
+							+ "background-image : url('1664849-200.png') ;"
+							+ "background-size : 100% 100% ;"
+							+ "background-color : white ;"
+							+ "filter : invert(1) ;"
+							+ "border-radius : 100% ;"
+							+ "border-width : 10px ;"
+							+ "border-color : white ;"
+						+ "}";
+					onoff = 0;
+				}
+			}
+		</script>
+		<style id = 'darklightstyle'>
+			header #darklighticon{
+				border-style : none ;
+				width : 100px ;
+				height : 100px ;
+				background-image : url('1664849-200.png') ;
+				background-size : 100% 100% ;
+				background-color : white ;
+				filter : invert(1) ;
+				border-radius : 100% ;
+				}
+		</style>
+		<header>
+		
+			<input type = 'button' id = 'darklighticon' onClick = 'darklight()' />
+			
+		</header>
