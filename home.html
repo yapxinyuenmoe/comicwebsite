@@ -8,7 +8,7 @@
 			height:auto;
 			overflow:auto;
 			}
-			#search, #logo{
+			#search, #darklighticon{
 				float: right;
 			}
 			#search button {
@@ -36,18 +36,7 @@
 				color: rgb(134, 123, 123);
             }
 			</style>
-</head>
-<body>
-	<header>
-		<img src="img/logo.png" id = 'logo' style="width: 170; height: 170;">
-
-		<section id = 'search'>
-			<form action="#">
-				<input type="text" placeholder="Search" name="search">
-				<button type="submit"><i class="fa fa-search"></i></button>
-			  </form>
-		</section>
-
+			
 		<style id = 'darklightstyle'>
 			html{
 			  background-color : black ;
@@ -57,21 +46,32 @@
 			  border-color : black ;
 			  }
 		</style>
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" style="width: 100; height: 100;">
+
+		<input type = 'button' id = 'darklighticon' onClick = 'darklight()' />
+
+		<section id = 'search'>
+			<form action="#">
+				<input type="text" placeholder="Search" name="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			  </form>
+		</section>
 
 		 <style>
 			#darklighticon{
 			  background-image : url('img/lightdark.png') ;
 			  border-style : solid ;
-			  width : 100px ;
-			  height : 100px ;
+			  width : 80px ;
+			  height : 80px ;
 			  background-size : 100% 100% ;
 			  background-color : white ;
 			  border-radius : 100% ;
 			  }
 		  </style>
 		  
-		<input type = 'button' id = 'darklighticon' onClick = 'darklight()' />
-
 		<script>
 			onoff = 0;
 			function darklight(){
