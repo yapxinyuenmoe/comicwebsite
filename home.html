@@ -2,7 +2,13 @@
 	<head>	
 		<title>SolarScan.com</title>
 			<style>
-			#search {
+			header{
+			display:block;
+			width:100%;
+			height:auto;
+			overflow:auto;
+			}
+			#search, #logo{
 				float: right;
 			}
 			#search button {
@@ -29,11 +35,11 @@
                 border: none;
 				color: rgb(134, 123, 123);
             }
-
 			</style>
-	</head>
-
-	<body>
+</head>
+<body>
+	<header>
+		<img src="img/logo.png" id = 'logo' style="width: 170; height: 170;">
 
 		<section id = 'search'>
 			<form action="#">
@@ -41,9 +47,6 @@
 				<button type="submit"><i class="fa fa-search"></i></button>
 			  </form>
 		</section>
-
-
-		<img src="img/logo.png" style="width: 70; height: 70;">
 
 		<style id = 'darklightstyle'>
 			html{
@@ -97,7 +100,7 @@
 			}
 		  </script>
 
-
+</header>
           <section id = 'navigation'>
         
 	      <ul>
