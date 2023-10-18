@@ -1,23 +1,18 @@
 <html>
 <head>	
 <title>SolarScan.com</title>
+<script src='darklight.js'></script>
 </head>
 <body>
 <header>
 
-<!-- Website Logo -->
-<img src="img/logo.png">
-<style>
-header img{
-width:100px;
-height:100px;
-}
-</style>
-<!-- 1 -->
+<!-- -- -- -- -- -- -- -- -- -- -- -- 1 Website Logo -->
+<img id = 'logo' src="img/logo.png">
+<link rel='stylesheet' href='logostyle.css' />
+<!-- -- -- -- -- -- -- -- -- -- -- -- 1 -->
 
-<!-- Theme Mode Switch -->
+<!-- -- -- -- -- -- -- -- -- -- -- -- 2 Theme Mode Switch -->
 <input type = 'button' id = 'darklighticon' onClick = 'darklight()' />
-<!-- 2 -->
 
 <style id = 'darklightstyle'>
 html{
@@ -30,6 +25,7 @@ border-color : black ;
 </style>
 <style>
 #darklighticon{
+float:right;
 background-image : url('img/lightdark.png') ;
 border-style : solid ;
 width : 80px ;
@@ -39,8 +35,9 @@ background-color : white ;
 border-radius : 100% ;
 }
 </style>
+<!-- -- -- -- -- -- -- -- -- -- -- -- 2 -->
 
-<!-- Search Bar -->
+<!-- -- -- -- -- -- -- -- -- -- -- -- 3 Search Bar -->
 <section class = 'search'>
 <form action="actionpage.php">
 <input type="text" placeholder="Search" id="searchinput">
@@ -48,7 +45,7 @@ border-radius : 100% ;
 </form>
 </section>
 <style>
-.search, #darklighticon{
+.search{
 float:right;
 }
 .search{
@@ -100,41 +97,8 @@ font-size:17px;
 background-color: rgb(26, 25, 25);
 }
 </style>
-<!-- 3 -->
+<!-- -- -- -- -- -- -- -- -- -- 3 -->
 
-<script>
-onoff = 0;
-function darklight(){
-if (onoff == 0){
-/*
-+ ""
-*/
-document.getElementById('darklightstyle').innerHTML=
-"#darklighticon{"
-+ "border-style : solid ;"
-+ "border-color : black ;"
-+ "}";
-document.getElementById('sinput').innerHTML=
-"";
-onoff = 1;
-}
-else{
-document.getElementById('darklightstyle').innerHTML=
-"html{"
-+ "background-color : black ;"
-+ "}"
-+ "#darklighticon{"
-+ "filter : invert(1) ;"
-+ "border-color : black ;"
-+ "}";
-document.getElementById('sinput').innerHTML=
-".search input {"
-+ "background-color: rgb(26, 25, 25);"
-+ "}";
-onoff = 0;
-}
-}
-</script>
 </header>
 <style>
 header{
@@ -144,7 +108,7 @@ height:100px;
 }
 </style>
 
-<!-- Navigation Bar -->
+<!-- -- -- -- -- -- -- -- -- -- 4 Navigation Bar -->
 <section id = 'navigation'>
 <ul>
 <li><a href = 'home.html'>HOME</a></li>
@@ -186,7 +150,7 @@ background-color: indigo;
 } 
 </style>
 </section>
-<!-- 4 -->
+<!-- -- -- -- -- -- -- 4 -->
 
 </body>
 </html>

@@ -1,10 +1,3 @@
-<section class = 'search'>
-<form action="actionpage.php">
-<input type="text" placeholder="Search" id="searchinput">
-<button type="submit"><i class="fa fa-search"></i></button>
-</form>
-</section>
-<style>
 .search{
 float:right;
 }
@@ -51,9 +44,3 @@ background: #625e5e;
 height:40px;
 font-size:17px;
 }
-</style>
-<style id = 'sinput'>
-.search input {
-background-color: rgb(26, 25, 25);
-}
-</style>

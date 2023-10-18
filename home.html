@@ -1,17 +1,19 @@
 <html>
 <head>	
 <title>SolarScan.com</title>
+<script src='darklight.js'></script>
 </head>
 <body>
 <header>
-<img src="img/logo.png">
-<style>
-header img{
-width:100px;
-height:100px;
-}
-</style>
+
+<!-- -- -- -- -- -- -- -- -- -- -- -- 1 Website Logo -->
+<img id = 'logo' src="img/logo.png">
+<link rel='stylesheet' href='logo.css' />
+<!-- -- -- -- -- -- -- -- -- -- -- -- 1 -->
+
+<!-- -- -- -- -- -- -- -- -- -- -- -- 2 Theme Mode Switch -->
 <input type = 'button' id = 'darklighticon' onClick = 'darklight()' />
+
 <style id = 'darklightstyle'>
 html{
 background-color : black ;
@@ -21,149 +23,28 @@ filter : invert(1) ;
 border-color : black ;
 }
 </style>
-<style>
-#darklighticon{
-background-image : url('img/lightdark.png') ;
-border-style : solid ;
-width : 80px ;
-height : 80px ;
-background-size : 100% 100% ;
-background-color : white ;
-border-radius : 100% ;
-}
-</style>
+<link rel='stylesheet' href='darklight.css' />
+<!-- -- -- -- -- -- -- -- -- -- -- -- 2 -->
+
+<!-- -- -- -- -- -- -- -- -- -- -- -- 3 Search Bar -->
 <section class = 'search'>
 <form action="actionpage.php">
 <input type="text" placeholder="Search" id="searchinput">
 <button type="submit"><i class="fa fa-search"></i></button>
 </form>
 </section>
-<style>
-.search, #darklighticon{
-float:right;
-}
-.search {
-  float: right;
-}
-
-.search input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.search button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-background: #3a1096;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.search button:hover {
-  background: #ccc;
-}
-
-@media screen and (max-width: 600px) {
-  .search {
-    float: none;
-  }
-  .search input[type=text], .search button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 14px;
-  }
-  .search input[type=text] {
-    border: 1px solid #ccc;  
-  }
-}
-.search{
-height:40px;
-margin-top:20px;
-margin-right:40px;
-}
-.search button {
-width:40px;
-height:40px;
-background: #3a1096;
-border: none;
-cursor: pointer;
-}
-.search button:hover {
-background: #625e5e;
-}
+<link rel='stylesheet' href='searchbar.css' />
+<style id = 'sinput'>
 .search input {
-height:40px;
-font-size:17px;
 background-color: rgb(26, 25, 25);
-border: 1px solid rgb(26, 25, 25);
-}
-.search input[type=text] {
-border: none;
-color: rgb(134, 123, 123);
 }
 </style>
-<script>
-onoff = 0;
-function darklight(){
-if (onoff == 0){
-/*
-+ ""
-*/
-document.getElementById('darklightstyle').innerHTML=
-"#darklighticon{"
-+ "border-style : solid ;"
-+ "border-color : black ;"
-+ "}";
-document.getElementById('cstyle').innerHTML=
-"";
-document.getElementById('srankstyle').innerHTML=
-"#sideranks p{"
-+ "width:100%;"
-+ "text-align:center;"
-+ "}";
-onoff = 1;
-}
-else{
-document.getElementById('darklightstyle').innerHTML=
-"html{"
-+ "background-color : black ;"
-+ "}"
-+ "#darklighticon{"
-+ "filter : invert(1) ;"
-+ "border-color : black ;"
-+ "}";
-document.getElementById('cstyle').innerHTML=
-"#comics p{"
-+ "width:100%;"
-+ "text-align:center;"
-+ "color:white;"
-+ "}";
-document.getElementById('srankstyle').innerHTML=
-"#sideranks p{"
-+ "width:100%;"
-+ "text-align:center;"
-+ "color:white;"
-+ "}";
-onoff = 0;
-}
-}
-</script>
+<!-- -- -- -- -- -- -- -- -- -- 3 -->
+
 </header>
-<style>
-header{
-display:block;
-width:100%;
-height:100px;
-}
-</style>
+<link rel='stylesheet' href='header.css' />
+
+<!-- -- -- -- -- -- -- -- -- -- 4 Navigation Bar -->
 <section id = 'navigation'>
 <ul>
 <li><a href = 'home.html'>HOME</a></li>
@@ -172,109 +53,49 @@ height:100px;
 <li><a href = 'recruitment.html'>RECRUITMENT</a></li>
 <li><a href = 'language.html'>LANGUAGE</a></li>
 </ul>
-<style>
-#navigation {
-background-color: blueviolet;
-}
-#navigation ul{
-list-style-type: none;
-background-color: blueviolet;
-margin: 0;
-padding: 0;
-overflow: hidden;
-margin-top: 10px;
-}
-#navigation li { 
-float: left;
-margin-left: 10px;
-}
-#navigation ul {
-margin-left: 220px;
-}
-#navigation a { 
-text-decoration: none;
-color: #fff; 
-padding: 11px; 
-display: block; 
-} 
-#navigation a:hover{ 
-color: #fff;
-font-weight: bold; 
-font-weight: italic;
-background-color: indigo; 
-} 
-</style>
+<link rel='stylesheet' href='navigationbar.css' />
 </section>
-<section id = 'comics'>
+<!-- -- -- -- -- -- -- 4 -->
+
+<!-- -- -- -- -- -- -- 5 Featured Comics -->
+<section id = 'fcomics'><!--f=featured-->
 <li><img /><p>comicName</p></li>
 <li><img /><p>comicName</p></li>
 <li><img /><p>comicName</p></li>
 <li><img /><p>comicName</p></li>
 <li><img /><p>comicName</p></li>
 </section>
-<style>
-#comics{
-float:left;
-margin-top:10px;
-margin-right:1px;
-width:80%;
-height:500px;
-padding:1px;
-border-style:solid;
-border-color:indigo;
-}
-#comics li{
-list-style-type:none;
-float:left;
-width:19.5%;
-height:99%;
-margin-right:1px;
-border-style:solid;
-border-color:indigo;
-}
-#comics img{
-height:400px;
-}
-#comics p{
-width:100%;
-text-align:center;
-}
-</style>
-<style id = 'cstyle'>
-#comics p{
+<link rel='stylesheet' href='featuredcomics.css' />
+<style id = 'fcstyle'>
+#fcomics p{
 color:white;
 }
 </style>
+<!-- -- -- -- -- -- -- 5 -->
+
+<!-- -- -- -- -- -- -- 6 Side Ranks -->
 <section id = 'sideranks'>
-<li><img /><p>comicName</p></li>
-<li><img /><p>comicName</p></li>
-<li><img /><p>comicName</p></li>
-<li><img /><p>comicName</p></li>
-<li><img /><p>comicName</p></li>
+<li><img /><p class='srtitle'>comicName</p>
+<p class='srdesc'>description</p></li>
+<li><img /><p class='srtitle'>comicName</p>
+<p class='srdesc'>description</p></li>
+<li><img /><p class='srtitle'>comicName</p>
+<p class='srdesc'>description</p></li>
+<li><img /><p class='srtitle'>comicName</p>
+<p class='srdesc'>description</p></li>
+<li><img /><p class='srtitle'>comicName</p>
+<p class='srdesc'>description</p></li>
 </section>
-<style>
-#sideranks{
-list-style-type:none;
-float:right;
-margin-top:10px;
-width:19%;
-height:700px;
-border-style:solid;
-border-color:indigo;
-}
-#sideranks li{
-margin:1px;
-height:20%;
-border-style:solid;
-border-color:indigo;
-}
-</style>
-<style id = 'srankstyle'>
-#sideranks p{
-width:100%;
-text-align:center;
+<link rel='stylesheet' href='sideranks.css' />
+<style id = 'srstyle'>
+.srtitle{
 color:white;
 }
+.srdesc{
+color:lightgrey;
+}
 </style>
+<!-- -- -- -- -- -- -- 6 -->
+
 </body>
 </html>
