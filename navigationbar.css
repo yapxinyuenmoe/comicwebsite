@@ -1,0 +1,30 @@
+#navigation {
+background-color: blueviolet;
+}
+#navigation ul{
+list-style-type: none;
+background-color: blueviolet;
+margin: 0;
+padding: 0;
+overflow: hidden;
+margin-top: 10px;
+}
+#navigation li { 
+float: left;
+margin-left: 10px;
+}
+#navigation ul {
+margin-left: 220px;
+}
+#navigation a { 
+text-decoration: none;
+color: #fff; 
+padding: 11px; 
+display: block; 
+} 
+#navigation a:hover{ 
+color: #fff;
+font-weight: bold; 
+font-weight: italic;
+background-color: indigo; 
+} 
