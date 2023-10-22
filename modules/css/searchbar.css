@@ -21,6 +21,8 @@ background: #3a1096;
   font-size: 17px;
   border: none;
   cursor: pointer;
+background-image:url('img/search.png');
+background-size:40px 40px;
 }
 @media screen and (max-width: 600px) {
   .search {
@@ -39,6 +41,8 @@ background: #3a1096;
 }
 .search button:hover {
 background: #625e5e;
+background-image:url('img/search.png');
+background-size:40px 40px;
 }
 .search input {
 height:40px;
