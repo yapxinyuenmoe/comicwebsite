@@ -1,5 +1,7 @@
-main{
+main::after{
 display:block;
 width:100%;
-overflow:auto;
+content:"";
+clear:both;
+display:table;
 }

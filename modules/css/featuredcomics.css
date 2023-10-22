@@ -6,21 +6,29 @@ width:80%;
 height:500px;
 border-style:solid;
 border-color:indigo;
+content:"";
+clear:both;
+display:table;
 }
 #fcomics li{
 list-style-type:none;
 float:left;
-width:19.6%;
+width:19.5%;
 height:99.5%;
 border-style:solid;
 border-color:indigo;
 }
 #fcomics img{
-width:100%;
+width:99%;
 min-height:360px;
 }
 #fcomics p{
 width:100%;
 text-align:center;
 font-family: 'Franklin Gothic Medium';
+}
+#fcomics::after{
+    content:"";
+    clear:both;
+    display:table;
 }
