@@ -16,7 +16,8 @@ border-style:solid;
 border-color:indigo;
 }
 #fcomics img{
-height:400px;
+width:100%;
+min-height:360px;
 }
 #fcomics p{
 width:100%;
